@@ -12,6 +12,7 @@ import { GrPersonalComputer } from "react-icons/gr";
 import { GrLaunch } from "react-icons/gr";
 import Usersowner from "./utils/usersowner";
 import Footer from "./footer";
+import Link from "next/link";
 
 
 
@@ -23,7 +24,7 @@ function Aboutmain() {
     <div>
       <Header />
       <div className='flex-col md:flex-row-reverse p-2'>
-        <img
+        <img 
           src='/assets/poster.jpg'
           className='w-2/3 h-2/3 m-auto '
           alt='poster'></img>
@@ -46,9 +47,9 @@ function Aboutmain() {
             growth of financing platforms, educational services, and even a
             neo-bank
           </p>
-          <a href="/portfolio" className='bg-yellow-700 w-fit p-4 rounded shadow-2xl text-white'>
+          <Link href="/portfolio" className='bg-yellow-700 w-fit p-4 rounded shadow-2xl text-white'>
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
 

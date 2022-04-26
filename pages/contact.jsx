@@ -46,7 +46,7 @@ function Contact() {
 
       <p className="text-center text-3xl font-bold mt-16">HOW TO REACH US</p>
       <p className="text-center text-xl">
-        Please send your requirements and we'll get back to you at the earliest.
+        Please send your requirements and we&aposll get back to you at the earliest.
       </p>
       <p className="text-center text-xl">Mobile +263773477646</p>
       <p className="text-center text-xl mb-16">E-mail info@trendonline.co.zw</p>
