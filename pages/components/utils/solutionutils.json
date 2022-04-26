@@ -1,0 +1,18 @@
+[{
+    "name":"OUR SERVICES",
+    "description":"Capitalize on our technical expertise to deliver software solutions from startups to enterprise companies. We have more than 5 years of experience in providing web application development services to industry",
+    "image":"https://iti.ca/uploads/2020/06/transformation-numerique.jpg"
+},{
+    "name":" WEB DESIGN AND DEVELOPMENT",
+    "description":" Modernize your environment, transform your processes, update your systems, and improve the experience for your employees, partners,and clients."
+    ,"image":"https://iti.ca/uploads/2020/06/transformation-numerique.jpg"
+},{
+    "name":"SOFTWARE DEVELOPMENT",
+    "description":"We excel in the process of custom software development from grassroot level and assist businesses at each phase from designing, development, deployment to maintenance. Over the years, we have developed a knack for custom software solutions and with our strategic low-risk approach, we streamline business processes, functions and overall projects. "
+    ,"image":"https://iti.ca/uploads/2020/06/transformation-numerique.jpg"
+},{
+    "name":"MOBILE APPS DEVELOPMENT",
+    "description":". Our team of proficient software developers are consistent in offering high-performing applications with standard QA practices and aligned business requirements."
+    ,"image":"https://iti.ca/uploads/2020/06/transformation-numerique.jpg"
+}
+]
