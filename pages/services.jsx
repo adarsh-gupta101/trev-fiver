@@ -3,7 +3,6 @@ import Footer from "./components/footer";
 import Headr from "./components/header";
 import Link from "next/link";
 
-
 const data = [
   {
     name: "WEB DESIGN AND DEVELOPMENT",
@@ -29,7 +28,7 @@ const data = [
 
 function Services() {
   return (
-    <div className="bg-gray-50">
+    <div className='bg-gray-50'>
       <Headr />
       <p className='text-5xl font-bold text-center p-6'>OUR SERVICES</p>
       <p className='text-2xl pt-8 text-center font-medium'>WHAT WE DO?</p>
@@ -38,18 +37,27 @@ function Services() {
         startups to enterprise companies. We have more than 5 years of
         experience in providing web application development services to industry{" "}
       </p>
-{data.map((datas,index)=>{
-    return(
-        <div key={index} className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-8' key={index}>
-           <div>
-            <p className="text-4xl  font-semibold pb-2"> {datas.name}</p>
-            <p className="text-gray-500 ">{datas.desc}</p>
-            <Link href="/contact"><p className="text-white bg-yellow-500 font-bold w-fit p-2 my-4 shadow">Contact Us</p></Link>
+      {data.map((datas, index) => {
+        return (
+          <div
+            className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-8'
+            key={index}>
+            <div>
+              <p className='text-4xl  font-semibold pb-2'> {datas.name}</p>
+              <p className='text-gray-500 '>{datas.desc}</p>
+              <Link href='/contact'>
+                <p className='text-white bg-yellow-500 font-bold w-fit p-2 my-4 shadow'>
+                  Contact Us
+                </p>
+              </Link>
             </div>
-    <img src={datas.img} className=' md:w-1/3 md:h-1/3 m-auto' alt='img'></img>
-    </div>
-    )
-})}
+            <img
+              src={datas.img}
+              className=' md:w-1/3 md:h-1/3 m-auto'
+              alt='img'></img>
+          </div>
+        );
+      })}
       <Footer />
     </div>
   );

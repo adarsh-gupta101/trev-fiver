@@ -50,7 +50,7 @@ function Contact() {
 
       <p className='text-center text-3xl font-bold mt-16'>HOW TO REACH US</p>
       <p className='text-center text-xl'>
-        Please send your requirements and we'll get back to you at the
+        Please send your requirements and we&apos;ll get back to you at the
         earliest.
       </p>
       <p className='text-center p-2 text-xl  w-fit flex justify-center items-center m-auto'>
