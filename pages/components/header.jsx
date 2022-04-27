@@ -54,7 +54,7 @@ function Header() {
         </Link>
 
         <p className='text-yellow-500 text-lg font-bold'>
-          <Link href='/'>TrendsOnline Digital</Link>
+          <Link href='/'>TrendOnline Digital</Link>
         </p>
         <div className='flex flex-col justify-evenly items-center md:hidden'>
           <Hamburger className='md:hidden' toggled={isOpen} toggle={setOpen} />

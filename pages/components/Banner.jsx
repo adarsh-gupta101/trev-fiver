@@ -72,7 +72,7 @@ function Banner() {
       <p
         ref={ptagref}
         className='hidden md:block absolute h-fit w-64  right-0 bottom-0  text-yellow-600 '>
-        Everywhere in Zimbabwe,<span className="text-black">TrendsOnline</span> Digital  makes IT accessible to free up businesses
+        Everywhere in Zimbabwe,<span className="text-black">TrendOnline</span> Digital  makes IT accessible to free up businesses
         to change and improve their competitiveness.
       </p></div>
     </div>
