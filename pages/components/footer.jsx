@@ -106,7 +106,7 @@ function Footer() {
         </span>
       </div>
     </div>
-    <p className='bg-gray-800 text-center text-white'>Developed With 💖 by TrendsOnline Digital</p>
+    <p className='bg-gray-800 text-center text-white'>Developed With 💖 by TrendOnline Digital</p>
 
     </>
   );
