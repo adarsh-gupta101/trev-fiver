@@ -2,6 +2,10 @@ import React from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { HiOutlineMail } from "react-icons/hi";
+import { AiOutlineMobile } from "react-icons/ai";
+
+import { GoLocation } from "react-icons/go";
+import { MdEmail } from "react-icons/md";
 
 function Contact() {
   return (
@@ -44,13 +48,20 @@ function Contact() {
         </div>
       </div>
 
-      <p className="text-center text-3xl font-bold mt-16">HOW TO REACH US</p>
-      <p className="text-center text-xl">
-        Please send your requirements and we&aposll get back to you at the earliest.
+      <p className='text-center text-3xl font-bold mt-16'>HOW TO REACH US</p>
+      <p className='text-center text-xl'>
+        Please send your requirements and we'll get back to you at the
+        earliest.
       </p>
-      <p className="text-center text-xl">Mobile +263773477646</p>
-      <p className="text-center text-xl mb-16">E-mail info@trendonline.co.zw</p>
-      <p className="text-center text-xl mb-16">ADDRESS- 14 ARGYLE ROAD , AVONDALE, HARARE, ZIMBABWE</p>
+      <p className='text-center p-2 text-xl  w-fit flex justify-center items-center m-auto'>
+        <AiOutlineMobile className='text-2xl ' /> +263773477646
+      </p>
+      <p className='text-center p-2 text-xl  w-fit flex justify-center items-center m-auto'>
+<MdEmail className='text-2xl ' /> info@trendonline.co.zw</p>
+      <p className='text-center p-2 text-xl mb-16 w-fit flex justify-center items-center m-auto'>
+        <GoLocation className='text-2xl' />
+        14 ARGYLE ROAD , AVONDALE, HARARE, ZIMBABWE
+      </p>
 
       <Footer />
     </div>

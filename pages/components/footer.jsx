@@ -98,6 +98,9 @@ function Footer() {
           <li className='text-yellow-300 p-2 md:mb-8'>
             <Link href='/portfolio'><p>Portfolio</p></Link>
           </li>
+          <li className='text-yellow-300 p-2 md:mb-8'>
+            <Link href='/contact'><p>Contact Us</p></Link>
+          </li>
         </ul>
         <span className='md:flex '>
           <div className='md:p-2'>
