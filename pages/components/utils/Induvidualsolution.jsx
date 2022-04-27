@@ -1,5 +1,7 @@
 import Hamburger from 'hamburger-react'
 import React, { useState } from 'react'
+import Link from "next/link";
+
 
 function Induvidualsolution({item}) {
     const [isOpen, setOpen] = useState(false);
@@ -20,7 +22,9 @@ function Induvidualsolution({item}) {
 </p>
 <button className={isOpen?'bg-blue-500 text-white p-2 mt-12':"hidden"}>
 {" "}
+<Link href="/services">
 View Services
+</Link>
 </button>
 </div>
 <>

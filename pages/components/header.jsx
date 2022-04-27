@@ -39,6 +39,10 @@ function Header() {
             <Link href='/portfolio'>
               <p className='hover:text-black cursor-pointer'>Portfolio</p>
             </Link>
+          </li> <li>
+            <Link href='/services'>
+              <p className='hover:text-black cursor-pointer'>Our Services</p>
+            </Link>
           </li>
           <li>
             <Link href='/contact'>
@@ -67,6 +71,9 @@ function Header() {
           </li>
           <li className='p-4 text-center font-semibold border-y bg-white'>
             <Link href='/Humans'>Software Development</Link>
+          </li>
+          <li className='p-4 text-center font-semibold border-y bg-white'>
+            <Link href='/services'>Our Services</Link>
           </li>
           <li className='p-4 text-center font-semibold border-y bg-white'>
             <Link href='/contact'>Contact Us</Link>

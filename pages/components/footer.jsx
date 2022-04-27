@@ -18,7 +18,7 @@ import {GoLocation} from "react-icons/go"
 function Footer() {
   return (
     <>
-    <div className='bg-gray-800 text-white flex flex-col md:flex-row justify-between px-8 md:px-16 py-32'>
+    <div className='bg-gray-800 text-white flex flex-col md:flex-row justify-between items-center px-8 md:px-8 py-32'>
       <div className='text-4xl font-medium '>
         <p className="font-bold text-center">OUR INSIGHTS TO YOUR INBOX.</p>
         <p className='text-xl text-yellow-300 w-76 p-2'>
@@ -87,19 +87,22 @@ function Footer() {
       <div className='flex flex-col md:flex-col flex-wrap  justify-evenly items-center'>
         <ul className='bg-red flex flex-col md:flex-row items-center mt-4'>
           <li className='text-yellow-300 p-2 md:mb-8'>
-            <Link href='/ITS'><p>IT Solutions</p></Link>
+            <Link href='/ITS'><p className="cursor-pointer">IT Solutions</p></Link>
           </li>
           <li className='text-yellow-300 p-2 md:mb-8'>
-            <Link href='/Humans'><p>Software Development</p></Link>
+            <Link href='/Humans'><p className="cursor-pointer">Software Development</p></Link>
           </li>
           <li className='text-yellow-300 p-2 md:mb-8'>
-            <Link href='/components/aboutmain'><p>About Us</p></Link>
+            <Link href='/components/aboutmain'><p className="cursor-pointer">About Us</p></Link>
           </li>
           <li className='text-yellow-300 p-2 md:mb-8'>
-            <Link href='/portfolio'><p>Portfolio</p></Link>
+            <Link href='/portfolio'><p className="cursor-pointer">Portfolio</p></Link>
           </li>
           <li className='text-yellow-300 p-2 md:mb-8'>
-            <Link href='/contact'><p>Contact Us</p></Link>
+            <Link href='/services'><p className="cursor-pointer">Our Services </p></Link>
+          </li>
+          <li className='text-yellow-300 p-2 md:mb-8'>
+            <Link href='/contact'><p className="cursor-pointer">Contact Us</p></Link>
           </li>
         </ul>
         <span className='md:flex '>
