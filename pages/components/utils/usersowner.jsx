@@ -19,8 +19,8 @@ const users=[
         position:"Business development Manager",
         image:"/assets/team-2.jpg " 
     },  {
-        name:"Trevor Jaera",
-        position:"Founder and Head Developer",
+        name:"Simbarashe Maiture",
+        position:"Head of Design",
         image:"/assets/team-3.jpg " 
     },  {
         name:"Devin Jaera",
