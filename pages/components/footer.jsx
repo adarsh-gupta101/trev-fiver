@@ -10,29 +10,30 @@ import {ImYoutube}  from "react-icons/im"
 
 function Footer() {
   return (
-    <div className='bg-gray-800 text-white flex flex-col md:flex-row justify-between px-8 md:px-32 py-32'>
+    <>
+    <div className='bg-gray-800 text-white flex flex-col md:flex-row justify-between px-8 md:px-16 py-32'>
       <div className='text-4xl font-semibold '>
         <p>OUR INSIGHTS TO YOUR INBOX.</p>
-        <p className='text-2xl text-yellow-300 w-78 p-2'>
+        <p className='text-xl text-yellow-300 w-78 p-2'>
           <a
             href='mailto:info@trendonline.co.zw
 '
             className='flex items-center justify-start text-yellow-300'>
             {" "}
-            Email Now :: info@trendonline.co.zw
+            Email Now -  info@trendonline.co.zw
           </a>
         </p>
-        <p className='text-2xl w-78 p-2'>
+        <p className='text-xl w-78 p-2'>
           <a
             href='mailto:info@trendonline.co.zw
 '
             className='flex items-center justify-start text-yellow-300'>
             {" "}
-            Mobile +263773477646
+            Mobile - +263773477646
           </a>
         </p>
         <p className="text-xl w-78 p-2 text-yellow-300">
-            ADDRESS :: 14 ARGYLE ROAD , AVONDALE, HARARE, zIMBABWE
+            ADDRESS - 14 ARGYLE ROAD , AVONDALE, HARARE, zIMBABWE
         </p>
         
         <div
@@ -67,24 +68,24 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col md:flex-col flex-wrap  justify-evenly'>
-        <ul className='bg-red flex flex-col md:flex-row items-center'>
-          <li className='text-yellow-300 p-2 mb-8'>
+      <div className='flex flex-col md:flex-col flex-wrap  justify-evenly items-center'>
+        <ul className='bg-red flex flex-col md:flex-row items-center mt-4'>
+          <li className='text-yellow-300 p-2 md:mb-8'>
             <Link href='/ITS'><p>IT Solutions</p></Link>
           </li>
-          <li className='text-yellow-300 p-2 mb-8'>
+          <li className='text-yellow-300 p-2 md:mb-8'>
             <Link href='/Humans'><p>Software Development</p></Link>
           </li>
-          <li className='text-yellow-300 p-2 mb-8'>
+          <li className='text-yellow-300 p-2 md:mb-8'>
             <Link href='/components/aboutmain'><p>About Us</p></Link>
           </li>
-          <li className='text-yellow-300 p-2 mb-8'>
+          <li className='text-yellow-300 p-2 md:mb-8'>
             <Link href='/portfolio'><p>Portfolio</p></Link>
           </li>
         </ul>
         <span className='md:flex '>
           <div className='md:p-2'>
-            <p className='font-semibold text-lg text-center mt-8 text-blue-300'>
+            <p className='font-semibold text-lg text-center mt-8 text-yellow-300'>
               Other Links
             </p>
             <p className='p-0 my-2  text-center'>Online Catalog</p>
@@ -94,7 +95,7 @@ function Footer() {
           </div>
 
           <div className='md:p-2'>
-            <p className='font-semibold text-lg text-blue-300 text-center mt-8'>
+            <p className='font-semibold text-lg text-yellow-300 text-center mt-8'>
               Solutions
             </p>
             <p className='p-0 my-2  text-center'>IT</p>
@@ -105,6 +106,9 @@ function Footer() {
         </span>
       </div>
     </div>
+    <p className='bg-gray-800 text-center text-white'>Developed With 💖 by TrendsOnline Digital</p>
+
+    </>
   );
 }
 

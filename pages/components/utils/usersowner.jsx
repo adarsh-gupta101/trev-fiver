@@ -43,11 +43,11 @@ function Usersowner() {
           className=' items-center justify-between md:m-2 flex md:flex md:mt-4'
 >          <a href='https://instagram.com/magesstudio'>
            
-           <AiOutlineInstagram className="w-12 h-12 "/>
+           <AiOutlineInstagram className="w-10 h-10 "/>
           </a>
           <a href='https://www.behance.net/Mages'>
             {" "}
-           <FiTwitter className="w-12 h-12 "/>
+           <FiTwitter className="w-10 h-10 "/>
           </a>
           <a href='https://www.linkedin.com/company/magesstudio'>
             {/* <img
@@ -55,7 +55,7 @@ function Usersowner() {
               src='https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png'
               className='w-10 h-10  sociallogo2 '
             /> */}
-         <AiOutlineLinkedin className="w-12 h-12 "/>
+         <AiOutlineLinkedin className="w-10 h-10 "/>
           </a>
 
           <div className=''>
@@ -66,7 +66,7 @@ function Usersowner() {
                 class
                 Name='w-10'
             <  /> */}
-             <ImYoutube className="w-12 h-12 "/>
+             <ImYoutube className="w-10 h-10 "/>
              </a>
           </div>
         </div>

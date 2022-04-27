@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 function Banner() {
   const boxRef = useRef();
   const ptagref = useRef();
@@ -49,31 +50,31 @@ function Banner() {
   });
   return (
     <div
-      className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg-blue-700 md:bg-blue-300'
+      className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg bg-[#fefffe]'
       style={{ fontFamily: "poppins" }}>
-      <div className='flex-col  top-0    '>
+      <div className='flex-col  top-0    w-full'>
         <img
           alt=''
-          src='/assets/header1.png'
+          src='/assets/homr.png'
           className='w-full h-full relative '></img>
         <img
           alt=''
           src='/assets/headerrectangle.png'
           id='svg'
-          className='w-2/5 ml-8 hidden md:flex h-90 absolute top-0 left-0 overflow-hidden '></img>
+          className='w-2/5 ml-8 hidden md:hidden h-90 absolute top-0 left-0 overflow-hidden '></img>
       </div>
+      <div className="flex">
       <h1
-        className='text-4xl p-2 md:p-0 md:text-8xl w-2/3 font-semibold text-[#e3e634] '
-        ref={boxRef}>
+        className='text-5xl p-2 md:p-0 md:text-8xl md:w-2/3 font-semibold txt-[#e3e634]  text-black'
+        ref={boxRef} >
         WE&apos;RE SOFTWARE DEVELOPERS AND IT EXPERTS
       </h1>
       <p
         ref={ptagref}
-        className='hidden md:block absolute right-0 bottom-8 w-48 text-black]'>
-        Everywhere in Zimbabwe,<span className="text-white">TrendsOnline</span> Digital  makes IT accessible to free up businesses
+        className='hidden md:block absolute h-fit w-64  right-0 bottom-0  text-yellow-600 '>
+        Everywhere in Zimbabwe,<span className="text-black">TrendsOnline</span> Digital  makes IT accessible to free up businesses
         to change and improve their competitiveness.
-      </p>
-      <div className='health h-12'></div>
+      </p></div>
     </div>
   );
 }

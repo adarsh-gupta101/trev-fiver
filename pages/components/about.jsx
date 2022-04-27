@@ -67,10 +67,10 @@ function About() {
 
   //   },[]);
   return (
-    <div ref={ref}>
+    <div ref={ref} className="bg-gray-50">
       <div
         id='first-paragraph'
-        className='first-paragraph text-4xl md:text-9xl p-8 font-bold flex items-center justify-evenly'>
+        className='first-paragraph leading-loose  text-4xl md:text-9xl p-8 font-bold flex items-center justify-evenly'>
         UNDERSTAND <p className='w-16 md:w-48 h-8 md:h-12 bg-yellow-400'></p>
       </div>
       <div
@@ -91,7 +91,7 @@ function About() {
         <p className='font-bold text-xl md:p-2'>
           IT made simple, at a human scale
         </p>
-        <p style={{color:""}}>
+        <p style={{color:""}} className="md:p-2">
           We support you in making your vision a reality and make your digital
           transformation the foundation of your growth.
         </p>

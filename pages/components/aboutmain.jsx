@@ -21,16 +21,16 @@ import Link from "next/link";
 function Aboutmain() {
   console.log(logo);
   return (
-    <div>
+    <div >
       <Header />
-      <div className='flex-col md:flex-row-reverse p-2'>
+      <div className='flex-col md:flex-row-reverse p-2 bg-gray-50'>
         <img 
           src='/assets/poster.jpg'
           className='w-2/3 h-2/3 m-auto '
           alt='poster'></img>
 
         <div className='p-8  '>
-          <p className='text-4xl font-bold'>LEARN ABOUT US</p>
+          <p className='text-4xl font-bold text-center'>LEARN ABOUT US</p>
           <p className='text-2xl py-8'>
             Empowered with rich technical expertise, Trendonline Digital stand
             as one of the young dynamic Software development companies in Harare
@@ -47,18 +47,18 @@ function Aboutmain() {
             growth of financing platforms, educational services, and even a
             neo-bank
           </p>
-          <Link href="/portfolio" className='bg-yellow-700 w-fit p-4 rounded shadow-2xl text-white'>
-            Learn More
+          <Link href="/portfolio">
+           <p  className='bg-yellow-700 text-center w-fit p-4 rounded shadow-2xl text-white'> Learn More</p>
           </Link>
         </div>
       </div>
 
-      <p className="text-4xl text-center">OUR STORY</p>
+      <p className="text-4xl text-center mt-4">OUR STORY</p>
       <p className="text-3xl text-center p-4" >
         Our talent remains approachable and ready to lend a hand because it’s
         the right thing to do hence our documeneted progress over the years
       </p>
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="gray">
       <VerticalTimelineElement
     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
     icon={<FaHourglassStart />}
