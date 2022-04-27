@@ -1,26 +1,42 @@
 import Link from "next/link";
 import React from "react";
-import { HiOutlineMail } from "react-icons/hi";
+import { MdEmail } from "react-icons/md";
 import {AiOutlineInstagram} from "react-icons/ai"
 import {FiTwitter} from "react-icons/fi"
 import {AiOutlineLinkedin} from "react-icons/ai"
 import {BsPinterest}  from "react-icons/bs"
 import {ImYoutube}  from "react-icons/im"
+import {AiOutlineMail} from "react-icons/ai"
+import {AiOutlineMobile} from "react-icons/ai"
+
+import {GoLocation} from "react-icons/go"
+
+
+
 
 
 function Footer() {
   return (
     <>
     <div className='bg-gray-800 text-white flex flex-col md:flex-row justify-between px-8 md:px-16 py-32'>
-      <div className='text-4xl font-semibold '>
-        <p>OUR INSIGHTS TO YOUR INBOX.</p>
-        <p className='text-xl text-yellow-300 w-78 p-2'>
+      <div className='text-4xl font-medium '>
+        <p className="font-bold text-center">OUR INSIGHTS TO YOUR INBOX.</p>
+        <p className='text-xl text-yellow-300 w-76 p-2'>
           <a
             href='mailto:info@trendonline.co.zw
 '
             className='flex items-center justify-start text-yellow-300'>
+          <MdEmail className="text-2xl mr-1" /> 
+          <span  className="ml-2">info@trendonline.co.zw</span>
+          </a>
+        </p>
+        <p className='text-xl w-90 p-2'>
+          <a
+            href='wa.me/+263773477646
+'
+            className='flex items-center justify-start text-yellow-300'>
             {" "}
-            Email Now -  info@trendonline.co.zw
+           <AiOutlineMobile className="text-2xl " /> <span  className="ml-2">+263773477646</span>
           </a>
         </p>
         <p className='text-xl w-78 p-2'>
@@ -29,22 +45,22 @@ function Footer() {
 '
             className='flex items-center justify-start text-yellow-300'>
             {" "}
-            Mobile - +263773477646
+            <GoLocation className="text-2xl " /> 
+            <span className="ml-3">14 ARGYLE ROAD , AVONDALE, HARARE, ZIMBABWE</span>
           </a>
         </p>
-        <p className="text-xl w-78 p-2 text-yellow-300">
-            ADDRESS - 14 ARGYLE ROAD , AVONDALE, HARARE, zIMBABWE
+        <p className="text-xl flex items-center justify-between w-78 p-2 text-yellow-300">
         </p>
         
         <div
           className=' items-center justify-between md:m-2 flex md:flex md:mt-4'
 >          <a href='https://instagram.com/magesstudio'>
            
-           <AiOutlineInstagram className="w-12 h-12 text-yellow-300 "/>
+           <AiOutlineInstagram className="w-12 h-12 text-white-300 "/>
           </a>
           <a href='https://www.behance.net/Mages'>
             {" "}
-           <FiTwitter className="w-12 h-12 text-yellow-300 "/>
+           <FiTwitter className="w-12 h-12 text-white-300 "/>
           </a>
           <a href='https://www.linkedin.com/company/magesstudio'>
             {/* <img
@@ -52,7 +68,7 @@ function Footer() {
               src='https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png'
               className='w-10 h-10  sociallogo2 '
             /> */}
-         <AiOutlineLinkedin className="w-12 h-12 text-yellow-300 "/>
+         <AiOutlineLinkedin className="w-12 h-12 text-white-300 "/>
           </a>
 
           <div className=''>
@@ -63,7 +79,7 @@ function Footer() {
                 class
                 Name='w-10'
             <  /> */}
-             <ImYoutube className="w-12 h-12 text-yellow-300 "/>
+             <ImYoutube className="w-12 h-12 text-white-300 "/>
              </a>
           </div>
         </div>

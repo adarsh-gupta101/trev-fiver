@@ -50,6 +50,8 @@ function Contact() {
       </p>
       <p className="text-center text-xl">Mobile +263773477646</p>
       <p className="text-center text-xl mb-16">E-mail info@trendonline.co.zw</p>
+      <p className="text-center text-xl mb-16">ADDRESS- 14 ARGYLE ROAD , AVONDALE, HARARE, ZIMBABWE</p>
+
       <Footer />
     </div>
   );
