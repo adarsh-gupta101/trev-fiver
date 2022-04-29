@@ -27,6 +27,9 @@ const users=[
         position:"Full Stack Developer",
         image:"/assets/team-4.jpg " 
     },
+    {name:"Adarsh Gupta",
+  position:"Creative Full Stack Developer",
+  image:"/assets/img/adarsh.png"}
 
 ]
 
@@ -41,15 +44,15 @@ function Usersowner() {
 
         <div
           className=' items-center justify-between md:m-2 flex md:flex md:mt-4'
->          <a href='https://instagram.com/magesstudio'>
+>          <a href='https://instagram.com/'>
            
            <AiOutlineInstagram className="w-10 h-10 "/>
           </a>
-          <a href='https://www.behance.net/Mages'>
+          <a href='https://www.behance.net/'>
             {" "}
            <FiTwitter className="w-10 h-10 "/>
           </a>
-          <a href='https://www.linkedin.com/company/magesstudio'>
+          <a href='https://www.linkedin.com/company/'>
             {/* <img
               alt=''
               src='https://brandlogos.net/wp-content/uploads/2016/06/linkedin-logo-512x512.png'
@@ -59,7 +62,7 @@ function Usersowner() {
           </a>
 
           <div className=''>
-            <a href='https://magesstudio.medium.com/'>
+            <a href='https://adarshgupta.medium.com/'>
               {/* <img
                 alt=''
                 src=' https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png'
