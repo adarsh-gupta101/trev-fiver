@@ -1554,13 +1554,18 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   "version" "5.1.1"
 
-"react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@18.0.0":
+"react-dom@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16.8.0", "react-dom@18.0.0":
   "integrity" "sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.0.0.tgz"
   "version" "18.0.0"
   dependencies:
     "loose-envify" "^1.1.0"
     "scheduler" "^0.21.0"
+
+"react-floating-whatsapp@^4.0.5":
+  "integrity" "sha512-KgpzswJ/Z5pKPDeqQDcMDHBgPQonqS6GLCb44HSSUaH4kgYBnigllWjfAC/D7oGvAGglKYpNOWM312Bp1xlC4Q=="
+  "resolved" "https://registry.npmjs.org/react-floating-whatsapp/-/react-floating-whatsapp-4.0.5.tgz"
+  "version" "4.0.5"
 
 "react-icons@^4.3.1":
   "integrity" "sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ=="
@@ -1605,7 +1610,12 @@
     "prop-types" "^15.7.2"
     "react-intersection-observer" "^8.26.2"
 
-"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^16.8 || ^17 || ^18", "react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.0.0":
+"react-whatsapp-chat-widget@^1.1.1":
+  "integrity" "sha512-Arnen0Nm0LwPjJuTsgMwGHpUH5xNfaQMp6BVA/clqyHcp8+RxYnU0dibmY3PMKsw/dRtRzKas+HOpYjsO3GA1w=="
+  "resolved" "https://registry.npmjs.org/react-whatsapp-chat-widget/-/react-whatsapp-chat-widget-1.1.1.tgz"
+  "version" "1.1.1"
+
+"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^16.8 || ^17 || ^18", "react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@>=16.8.0", "react@18.0.0":
   "integrity" "sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.0.0.tgz"
   "version" "18.0.0"

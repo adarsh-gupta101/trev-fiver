@@ -50,7 +50,7 @@ function Banner() {
   });
   return (
     <div
-      className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg bg-[#fefffe]'
+      className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg bg-[#f2f3f0]'
       style={{ fontFamily: "poppins" }}>
       <div className='flex-col  top-0    w-full'>
         <img

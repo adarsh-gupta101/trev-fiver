@@ -25,7 +25,7 @@ function Solutions2() {
     );
   });
   return (
-    <div ref={ref} className='flex flex-col md:flex-row bg-gray-800 z-0 my-6'>
+    <div ref={ref} className='flex flex-col md:flex-row bg-black z-0 my-6'>
       <div>
         {" "}
         <span className='md:text-8xl  z-1 top-0 md:relative text-center h-full flex items-center text-white'>

@@ -1,4 +1,4 @@
-import Hamburger from 'hamburger-react'
+import {Squeeze as Hamburger} from 'hamburger-react'
 import React, { useState } from 'react'
 import Link from "next/link";
 

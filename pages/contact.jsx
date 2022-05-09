@@ -6,6 +6,7 @@ import { AiOutlineMobile } from "react-icons/ai";
 
 import { GoLocation } from "react-icons/go";
 import { MdEmail } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
 
 function Contact() {
   return (
@@ -54,12 +55,17 @@ function Contact() {
         earliest.
       </p>
       <p className='text-center p-2 text-xl  w-fit flex justify-center items-center m-auto'>
-        <AiOutlineMobile className='text-2xl ' /> +263773477646
+        <AiOutlineMobile className='text-2xl ' />&nbsp; +263773477646
       </p>
       <p className='text-center p-2 text-xl  w-fit flex justify-center items-center m-auto'>
-<MdEmail className='text-2xl ' /> info@trendonline.co.zw</p>
+<MdEmail className='text-2xl ' />&nbsp; info@trendonline.co.zw</p>
+<p className='text-center p-2 text-xl w-fit flex justify-center items-center m-auto'>
+
+<BsWhatsapp className="text-2xl"/>
+ &nbsp; Whatsapp Us and lets connect
+</p>
       <p className='text-center p-2 text-xl mb-16 w-fit flex justify-center items-center m-auto'>
-        <GoLocation className='text-2xl' />
+        <GoLocation className='text-2xl' /> &nbsp;
         14 ARGYLE ROAD , AVONDALE, HARARE, ZIMBABWE
       </p>
 

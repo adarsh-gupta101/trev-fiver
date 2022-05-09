@@ -12,7 +12,7 @@ const solution=drop==2?S012Json:Sol1Json;
 
   
 
-    <div className=' py-6 md:mx-24 bg-white '>
+    <div className=' py-6 md:mx-24 bg-white shadow-sm '>
       { solution.map((item, index) => {
         return (
 
