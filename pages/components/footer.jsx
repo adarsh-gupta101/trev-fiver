@@ -6,6 +6,7 @@ import {FiTwitter} from "react-icons/fi"
 import {AiOutlineLinkedin} from "react-icons/ai"
 import {BsPinterest}  from "react-icons/bs"
 import {ImYoutube}  from "react-icons/im"
+import {BsWhatsapp} from "react-icons/bs"
 import {AiOutlineMail} from "react-icons/ai"
 import {AiOutlineMobile} from "react-icons/ai"
 
@@ -61,6 +62,10 @@ function Footer() {
           <a href='https://www.behance.net/Mages'>
             {" "}
            <FiTwitter className="w-12 h-12 text-white-300 "/>
+          </a>
+          <a href='https://wa.me/+263732774218'>
+            {" "}
+           <BsWhatsapp className="w-12 h-12 text-white-300 "/>
           </a>
           <a href='https://www.linkedin.com/company/magesstudio'>
             {/* <img

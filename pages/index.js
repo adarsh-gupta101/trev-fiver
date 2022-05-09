@@ -15,7 +15,7 @@ import Solutions2 from "./components/solutions2";
 
 export default function Home() {
   return (
-    <div className='bg-gray-50' style={{fontFamily:"poppins",width:"100%",overflow:"hidden",scrollBehavior:"smooth"}} >
+    <div className='md:bg-gray-50 ' style={{fontFamily:"poppins",width:"100%",overflow:"hidden",scrollBehavior:"smooth"}} >
       <Head>
  
       </Head>
