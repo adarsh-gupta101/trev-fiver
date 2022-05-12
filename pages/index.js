@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <Header></Header>
       <Banner />
-      <FloatingWhatsApp  phoneNumber={+263732774218} accountName="TrendOnlineDigital" avatar="/assets/img/logo trend.png"/>
+      <FloatingWhatsApp style={{ZIndex:10}} phoneNumber={+263732774218} accountName="TrendOnlineDigital" avatar="/assets/img/logo trend.png"/>
 
      
       <Industries />

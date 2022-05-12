@@ -25,11 +25,11 @@ function Solutions2() {
     );
   });
   return (
-    <div ref={ref} className='flex flex-col md:flex-row bg-black z-0 my-6'>
+    <div ref={ref} className='flex flex-col md:flex-row-reverse  z-0 my-6'>
       <div>
         {" "}
         <span className='md:text-8xl  z-1 top-0 md:relative text-center h-full flex items-center text-white'>
-          <p className='font-bold hidden md:block itsol text-[#e4e71c]'>          SOFTWARE DEVELOPMENT
+          <p className='font-bold hidden md:block itsol text-black'>          SOFTWARE DEVELOPMENT
 </p>
         </span>
       </div>

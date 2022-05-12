@@ -50,8 +50,8 @@ function Banner() {
   });
   return (
     <div
-      className=' w-full flex flex-col-reverse md:flex-row md:justify-center md:items-center bg bg-[#f2f3f0]'
-      style={{ fontFamily: "poppins" }}>
+      className=' w-full flex flex-col-reverse md:flex-row md:justify-center  md:items-center bg bg-[#f2f3f0]'
+      style={{ fontFamily: "poppins",background:"linear-gradient(309deg, #ff1b6b, #fff95b)" }}>
       <div className='flex-col  top-0    w-full'>
         <img
           alt=''
@@ -65,14 +65,14 @@ function Banner() {
       </div>
       <div className="flex">
       <h1
-        className='text-5xl p-2 md:p-0 md:text-8xl md:w-2/3 font-semibold txt-[#e3e634]  text-black'
+        className='text-5xl p-2 md:p-0  md:text-8xl md:w-2/3 font-bold txt-[#e3e634]  text-black'
         ref={boxRef} >
         WE&apos;RE SOFTWARE DEVELOPERS AND IT EXPERTS
       </h1>
       <p
         ref={ptagref}
-        className='hidden md:block absolute h-fit w-64  right-0 bottom-0  text-yellow-600 '>
-        Everywhere in Zimbabwe,<span className="text-black">TrendOnline</span> Digital  makes IT accessible to free up businesses
+        className='hidden md:block absolute h-fit w-64  right-0 bottom-0  text-white '>
+        Everywhere in Zimbabwe,<span className="text-yellow-400">TrendOnline</span> Digital  makes IT accessible to free up businesses
         to change and improve their competitiveness.
       </p></div>
     </div>

@@ -1,4 +1,4 @@
-import React,{useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,38 +17,36 @@ function Industries() {
       element.querySelector("#advicehead"),
       {
         y: 0,
-        zoom:1.3
-
+        zoom: 1.3,
       },
       {
         y: -10,
-        opacity:1,
-        rotate:0,
-        zoom:1,
-        maxHeight:20,
-        duration:1.5,
+        opacity: 1,
+        rotate: 0,
+        zoom: 1,
+        maxHeight: 20,
+        duration: 1.5,
         scrollTrigger: {
           trigger: element.querySelector("#advicehead"),
           start: "top center",
-          scrub:true
+          scrub: true,
         },
       },
       gsap.fromTo(
         element.querySelector("#slider"),
         {
-        opacity:0
-  
+          opacity: 0,
         },
         {
-          opacity:1,
+          opacity: 1,
           scrollTrigger: {
             trigger: element.querySelector("#slider"),
             start: "top center",
           },
         }
-      
-    ))
-  })
+      )
+    );
+  });
 
   const settings = {
     dots: false,
@@ -84,7 +82,10 @@ function Industries() {
     ],
   };
   return (
-    <div  ref={ref} className=' indus md:p-12 pb-16' style={{ maxWidth: "100vw", overflow: "hidden" }}>
+    <div
+      ref={ref}
+      className=' indus md:p-12 pb-16'
+      style={{ overflow: "hidden" }}>
       <Head>
         <link
           rel='stylesheet'
@@ -99,21 +100,33 @@ function Industries() {
         />
       </Head>
 
-      <p className='text-4xl mt-12  text-center md:text-4xl text-gray-500 p-2 md:p-0'>Industries</p>
+      <p className='text-4xl mt-12  text-center md:text-4xl text-gray-500 p-2 md:p-0'>
+        Industries
+      </p>
 
-      <h1 id="advicehead" className=' p-2 md:p-0 text-5xl flex items-center text-center m-auto md:text-8xl md:w-11/12 font-bold text-yellow-600' style={{height:"100vh",backgroundImage:"url(`https://img.freepik.com/free-vector/white-abstract-background-3d-paper-style_23-2148403778.jpg?w=2000`)"}}>
+      <h1
+        id='advicehead'
+        className=' p-2 md:p-0 text-5xl flex items-center text-center m-auto md:text-8xl md:w-11/12 font-bold text-yellow-600'
+        style={{
+          height: "80vh",
+          backgroundImage:
+            "url(`https://img.freepik.com/free-vector/white-abstract-background-3d-paper-style_23-2148403778.jpg?w=2000`)",
+        }}>
         WE ADVISE MORE THAN 1500 COMPANIES FROM ALL SECTORS
       </h1>
 
-      <Slider {...settings} id="slider" >
+      <Slider {...settings} id='slider'>
         {inus.map((item, index) => (
-          <div key={index} id="sliderdiv" className='m-2 bg-white hover:shadow-xl md:m-2 p-8  md:p-16 '>
-            <img alt="" src={item.image} className='w-full h-full'></img>
+          <div
+            key={index}
+            id='sliderdiv'
+            className='m-2 bg-white hover:shadow-xl md:m-2 p-8  md:p-16 '>
+            <img alt='' src={item.image} className='w-full h-full'></img>
             <p className='bg-white shadow-xl w-fit p-2 text-xl rounded relative -top-4 left-1/2 hover:bg-[#b9ab25] hover:text-white'>
               View Industry
             </p>
             <p className='text-xl font-semibold'>{item.name}</p>
-            <p className="font-medium text-[#aa9e30]">{item.description}</p>
+            <p className='font-medium text-[#aa9e30]'>{item.description}</p>
           </div>
         ))}
       </Slider>

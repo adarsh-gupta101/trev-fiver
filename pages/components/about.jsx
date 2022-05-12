@@ -40,10 +40,10 @@ function About() {
     gsap.fromTo(
       element.querySelector("#third"),
       {
-        x: 50,
+        x: 0,
       },
       {
-        x: 50,
+        x: 70,
         scrollTrigger: {
           trigger: element.querySelector("#first-paragraph"),
           start: "top center",
@@ -87,7 +87,7 @@ function About() {
         SHAPE
         <p className='w-16 md:w-48 h-8 md:h-12 bg-red-400'></p>
       </div>
-      <div style={{ height: "fit-content" }} className='w-fit  md:w-72 m-16 md:m-24'>
+      <div style={{ height: "fit-content" }} className='w-fit  md:w-fit m-16 md:m-24'>
         <p className='font-bold text-xl md:p-2'>
           IT made simple, at a human scale
         </p>
