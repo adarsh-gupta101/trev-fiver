@@ -8,7 +8,7 @@ function Header() {
   return (
     <div>
       <nav
-        className='flex justify-between md:justify-evenly items-center h-24 p-2 sticky top-1  bg-white shadow-sm z-50'
+        className='flex justify-between md:justify-evenly items-center h-24 p-2 sticky top-1  bg-white shadow-xl z-50'
         style={{ fontFamily: "poppins" }}>
         <ul className='hidden md:flex w-3/4  justify-evenly items-center text-yellow-500'>
           <li>

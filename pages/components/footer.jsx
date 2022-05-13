@@ -88,23 +88,23 @@ function Footer() {
           </ul>
           <span className='md:flex '>
             <div className='md:p-2'>
-              <p className='font-semibold text-lg text-center mt-8 text-yellow-300'>
+              <p className='font-semibold text-lg text-left mt-8 text-yellow-300'>
                 Other Links
               </p>
-              <p className='p-0 my-2  text-center'>Online Catalog</p>
-              <p className='p-0 my-2  text-center'>My Account</p>
-              <p className='p-0 my-2  text-center'> Contact</p>
-              <p className='p-0 my-2  text-center'> Terms & Conditions</p>
+              <p className='p-0 my-2  text-left'>Online Catalog</p>
+              <p className='p-0 my-2  text-left'>My Account</p>
+              <p className='p-0 my-2  text-left'> Contact</p>
+              <p className='p-0 my-2  text-left'> Terms & Conditions</p>
             </div>
 
             <div className='md:p-2'>
-              <p className='font-semibold text-lg text-yellow-300 text-center mt-8'>
+              <p className='font-semibold text-lg text-yellow-300 text-left mt-8'>
                 Solutions
               </p>
-              <p className='p-0 my-2  text-center'>IT</p>
-              <p className='p-0 my-2  text-center'>Software Development</p>
-              <p className='p-0 my-2  text-center'> Web Design</p>
-              <p className='p-0 my-2  text-center'> SEO</p>
+              <p className='p-0 my-2  text-left'>IT</p>
+              <p className='p-0 my-2  text-left'>Software Development</p>
+              <p className='p-0 my-2  text-left'> Web Design</p>
+              <p className='p-0 my-2  text-left'> SEO</p>
             </div>
           </span>
         </div>

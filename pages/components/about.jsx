@@ -67,7 +67,7 @@ function About() {
 
   //   },[]);
   return (
-    <div ref={ref} className="bg-gray-50">
+    <div ref={ref} className="">
       <div
         id='first-paragraph'
         className='first-paragraph leading-loose  text-4xl md:text-9xl p-8 font-bold flex items-center justify-evenly'>
