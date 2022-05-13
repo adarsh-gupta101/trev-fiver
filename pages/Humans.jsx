@@ -10,7 +10,8 @@ import Solutionscontainer from "./components/utils/solutionscontainer";
 
 function Humans() {
   return (
-    <div>
+    <div style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
+  }}>
       <Header />
       <Solutions2></Solutions2>
       {/* <Solutionscontainer/> */}

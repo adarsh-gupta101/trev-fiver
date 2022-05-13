@@ -10,12 +10,13 @@ import { BsWhatsapp } from "react-icons/bs";
 
 function Contact() {
   return (
-    <div className=''>
+    <div style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
+  }}>
       <Header />
       <p className='text-5xl text-bold text-center mt-16'> CONTACT US</p>
       <div className='flex flex-wrap justify-center items-center'>
-        <div className='bg-white flex flex-col items-center w-64 text-xl text-center p-4  m-12'>
-          <img src='/assets/img/contacts.jpeg' alt='' />
+        <div className='bg-whte shadow-xl flex flex-col items-center w-64 text-xl text-center p-4  m-12'>
+          <img src='/assets/img/contacts.jpeg' alt='' className="w-64"  />
           <p>Trevor Jaera</p>
           <a
             href='mailto:info@trendonline.co.zw
@@ -25,8 +26,8 @@ function Contact() {
             <HiOutlineMail></HiOutlineMail>Email Now
           </a>
         </div>{" "}
-        <div className='bg-white flex flex-col items-center w-64 text-xl text-center p-4  m-12'>
-          <img src='/assets/img/contacts r.png' alt='' />
+        <div className='shadow-xl flex flex-col items-center w-64 text-xl text-center p-4  m-12'>
+          <img src='/assets/img/contacts r.png' className="w-64"  alt='' />
           <p>INFORMATION DESK</p>
           <a
             href='mailto:info@trendonline.co.zw
@@ -36,8 +37,8 @@ function Contact() {
             <HiOutlineMail></HiOutlineMail>Email Now
           </a>
         </div>
-        <div className='bg-white flex flex-col items-center w-64 text-xl text-center p-4  m-12'>
-          <img src='/assets/img/contacts r.png' alt='' />
+        <div className='bg-whie flex flex-col shadow-xl items-center w-64 text-xl text-center p-4  m-12'>
+          <img src='/assets/img/contacts r.png' className="w-64"  alt='' />
           <p>SUPPORT TEAM</p>
           <a
             href='mailto:info@trendonline.co.zw

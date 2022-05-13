@@ -7,7 +7,8 @@ import Solutionsdrop from "./components/Solutionsdrop";
 
 function ITS() {
   return (
-    <div>
+    <div style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
+  }}>
       <Header />
       <Solutions2></Solutions2>
       {/* <Solutionscontainer/> */}

@@ -19,11 +19,12 @@ import Link from "next/link";
 
 
 function Aboutmain() {
-  console.log(logo);
+  // console.log(logo);
   return (
-    <div >
+    <div style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
+  }}>
       <Header />
-      <div className='flex-col md:flex-row-reverse p-2 bg-gray-50'>
+      <div className='flex-col md:flex-row-reverse p-2 bg-ray-50'>
         <img 
           src='/assets/poster.jpg'
           className='w-2/3 h-2/3 m-auto '
