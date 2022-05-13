@@ -17,7 +17,7 @@ function Footer() {
     <>
       <div className='bg-gray-800 text-white flex flex-col md:flex-row justify-between items-center px-8 md:px-8 py-32'>
         <div className='text-4xl font-medium '>
-          <p className='font-bold text-center md:text-left mb-0 md:mb-16'>
+          <p className='font-bold text-center  md:text-left mb-0 md:mb-16'>
             OUR INSIGHTS TO YOUR INBOX.
           </p>
           <p className='text-xl text-yellow-300 w-76 p-2 mt-4 '>
@@ -55,58 +55,58 @@ function Footer() {
         </div>
         <div className='flex flex-col md:flex-col flex-wrap  justify-evenly items-center'>
           <ul className='bg-red flex flex-col  md:flex-row items-center mt-4'>
-            <li className='text-yellow-300 p-2 md:mb-8'>
+            <li className='text-yellow-300 p-2 '>
               <Link href='/ITS'>
                 <p className='cursor-pointer'>IT Solutions</p>
               </Link>
             </li>
-            <li className='text-yellow-300 p-2 md:mb-8'>
+            <li className='text-yellow-300 p-2 '>
               <Link href='/Humans'>
                 <p className='cursor-pointer'>Software Development</p>
               </Link>
             </li>
-            <li className='text-yellow-300 p-2 md:mb-8'>
+            <li className='text-yellow-300 p-2 '>
               <Link href='/components/aboutmain'>
                 <p className='cursor-pointer'>About Us</p>
               </Link>
             </li>
-            <li className='text-yellow-300 p-2 md:mb-8'>
+            <li className='text-yellow-300 p-2 '>
               <Link href='/portfolio'>
                 <p className='cursor-pointer'>Portfolio</p>
               </Link>
             </li>
-            <li className='text-yellow-300 p-2 md:mb-8'>
+            <li className='text-yellow-300 p-2 '>
               <Link href='/services'>
                 <p className='cursor-pointer'>Our Services </p>
               </Link>
             </li>
-            <li className='text-yellow-300 p-2 md:mb-8'>
+            <li className='text-yellow-300 p-2 '>
               <Link href='/contact'>
                 <p className='cursor-pointer'>Contact Us</p>
               </Link>
             </li>
           </ul>
-          <span className='md:flex '>
-            <div className='md:p-2'>
-              <p className='font-semibold text-lg text-left mt-8 text-yellow-300'>
+          <div className='md:flex  p-4  w-full justify-around'>
+            <div className='md:p-2 text-center md:text-left'>
+              <p className='font-semibold text-lg text-center md:text-left  mt-8 text-yellow-300'>
                 Other Links
               </p>
-              <p className='p-0 my-2  text-left'>Online Catalog</p>
-              <p className='p-0 my-2  text-left'>My Account</p>
-              <p className='p-0 my-2  text-left'> Contact</p>
-              <p className='p-0 my-2  text-left'> Terms & Conditions</p>
+              <p className='p-0 my-2  '>Online Catalog</p>
+              <p className='p-0 my-2  '>My Account</p>
+              <p className='p-0 my-2  '> Contact</p>
+              <p className='p-0 my-2  '> Terms & Conditions</p>
             </div>
 
-            <div className='md:p-2'>
-              <p className='font-semibold text-lg text-yellow-300 text-left mt-8'>
+            <div className='md:p-2 text-center md:text-left'>
+              <p className='font-semibold text-lg text-yellow-300  mt-8'>
                 Solutions
               </p>
-              <p className='p-0 my-2  text-left'>IT</p>
-              <p className='p-0 my-2  text-left'>Software Development</p>
-              <p className='p-0 my-2  text-left'> Web Design</p>
-              <p className='p-0 my-2  text-left'> SEO</p>
+              <p className='p-0 my-2  '>IT</p>
+              <p className='p-0 my-2  '>Software Development</p>
+              <p className='p-0 my-2  '> Web Design</p>
+              <p className='p-0 my-2  '> SEO</p>
             </div>
-          </span>
+          </div>
         </div>
       </div>
 
