@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 // import Solutions from "./components/solutions";
 import Solutions2 from "./components/solutions2";
-import Solutionsdrop from "./components/Solutionsdrop2";
+import Solutionsdrop from "./components/solutiondrop2";
 // import Solutionscontainer from "./components/utils/solutionscontainer";
 
 function Humans() {

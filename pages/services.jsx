@@ -121,7 +121,7 @@ function Services() {
             key={index}>
             <div>
               <p className='text-4xl  font-semibold pb-2'> {datas.name}</p>
-              <p className='text-gray-500 '>{datas.desc}</p>
+              <p className='text-gray-500 py-2 '>{datas.desc}</p>
               {datas.extra &&
                 datas.extra?.map((result,index) => {
                   // console.log(result)
