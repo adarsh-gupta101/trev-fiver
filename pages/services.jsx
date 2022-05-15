@@ -117,10 +117,10 @@ function Services() {
       {data.map((datas, index) => {
         return (
           <div
-            className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-8'
+            className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-7'
             key={index}>
             <div>
-              <p className='text-4xl  font-semibold pb-2'> {datas.name}</p>
+              <p className='text-4xl  font-semibold pb-2 break-words'> {datas.name}</p>
               <p className='text-gray-500 py-2 '>{datas.desc}</p>
               {datas.extra &&
                 datas.extra?.map((result,index) => {
