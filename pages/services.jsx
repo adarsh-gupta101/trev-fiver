@@ -133,7 +133,7 @@ function Services() {
                         return(
                           <div className="p-4" key={ind}>
                             <p className="font-semibold text-xl">{res.name}</p>
-                      <p>{res.desc}</p>
+                      <p className="my-2 text-gray-700">{res.desc}</p>
                           </div>
                         )
                       })}
