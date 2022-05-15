@@ -8,7 +8,7 @@ function Induvidualsolution({item}) {
     // console.log(item)
 
   return (
-    <div className='p-8 border-b '>
+    <div className='p-8 shadow-sm hover:shadow '>
 
 <div className=' flex justify-between '>
 <h1 className='text-3xl'>{item?.name}</h1>

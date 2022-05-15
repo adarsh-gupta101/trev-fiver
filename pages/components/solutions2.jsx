@@ -12,10 +12,12 @@ function Solutions2() {
     gsap.fromTo(
       element.querySelector(".itsol"),
       {
-        rotate: 25,
+        x: -25,
+        // scaleX:0.8
       },
       {
-        rotate: -25,
+        x: 25,
+        // scaleX:1,
         scrollTrigger: {
           trigger: element,
           start: "top center",

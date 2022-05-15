@@ -18,11 +18,15 @@ function Industries() {
       {
         y: 0,
         zoom: 1.3,
+        // fontSize:"80px",
+
       },
       {
         y: -10,
+// filter:"drop-shadow(1px 0px 1px #000)",
         opacity: 1,
         rotate: 0,
+        // lineHeight:"100px",
         zoom: 1,
         maxHeight: 20,
         duration: 1.5,
