@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
 function Banner() {
   const boxRef = useRef();
   const ptagref = useRef();
@@ -15,7 +14,7 @@ function Banner() {
 
     gsap.fromTo(
       boxRef.current,
-      { x: 30, y: 90, opacity: 0 },
+      { x: 30, y: 90 },
       {
         x: 0,
         y: 0,
@@ -23,7 +22,7 @@ function Banner() {
         duration: 1,
         scrollTrigger: {
           trigger: boxRef.current,
-          // scrub:1
+          scrub:true
         },
       }
     );
@@ -32,7 +31,7 @@ function Banner() {
       { x: -30, y: -90 },
       {
         x: 0,
-        y: 100,
+        y: 150,
         scrollTrigger: {
           trigger: boxRef.current,
           scrub: true,
@@ -41,17 +40,21 @@ function Banner() {
     );
     gsap.fromTo(
       "#svg",
-      { y: 205, opacity: 0 },
+      { y: 215, opacity: 0 },
       { y: 0, opacity: 1, duration: 1.5 },
       {
         scrub: true,
       }
     );
   });
+
   return (
     <div
       className=' w-full flex flex-col-reverse md:flex-row md:justify-center  md:items-center bg bg-[#f2f3f0]'
-      style={{ fontFamily: "poppins",background:"linear-gradient(309deg, #ff1b6b, #fff95b)" }}>
+      style={{
+        fontFamily: "poppins",
+        background: "linear-gradient(309deg, #ff1b6b, #fff95b)",
+      }}>
       <div className='flex-col  top-0    w-full'>
         <img
           alt=''
@@ -63,18 +66,21 @@ function Banner() {
           id='svg'
           className='w-2/5 ml-8 hidden md:hidden h-90 absolute top-0 left-0 overflow-hidden '></img>
       </div>
-      <div className="flex">
-      <h1
-        className='text-5xl p-2 md:p-0  md:text-8xl md:w-2/3 font-bold txt-[#e3e634]  text-black'
-        ref={boxRef} >
-        WE&apos;RE SOFTWARE DEVELOPERS AND IT EXPERTS
-      </h1>
-      <p
-        ref={ptagref}
-        className='hidden md:block absolute h-fit w-64  right-0 bottom-0  text-white '>
-        Everywhere in Zimbabwe,<span className="text-yellow-400">TrendOnline</span> Digital  makes IT accessible to free up businesses
-        to change and improve their competitiveness.
-      </p></div>
+      <div className='flex'>
+        <h1
+          className='text-5xl p-2 md:p-0  md:text-8xl md:w-2/3 font-bold txt-[#e3e634]  text-black'
+          ref={boxRef}>
+          WE&apos;RE SOFTWARE DEVELOPERS AND IT EXPERTS
+        </h1>
+        <p
+          ref={ptagref}
+          className='hidden md:block absolute h-fit w-64  right-0 bottom-0  text-white '>
+          Everywhere in Zimbabwe,
+          <span className='text-yellow-400'>TrendOnline</span> Digital makes IT
+          accessible to free up businesses to change and improve their
+          competitiveness.
+        </p>
+      </div>
     </div>
   );
 }

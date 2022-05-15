@@ -120,7 +120,7 @@ function Industries() {
           <div
             key={index}
             id='sliderdiv'
-            className='m-2 bg-white hover:shadow-xl md:m-2 p-8  md:p-16 '>
+            className='m-2 shadow hover:shadow-xl md:m-2 p-8  md:p-16 '>
             <img alt='' src={item.image} className='w-full h-full'></img>
             <p className='bg-white shadow-xl w-fit p-2 text-xl rounded relative -top-4 left-1/2 hover:bg-[#b9ab25] hover:text-white'>
               View Industry

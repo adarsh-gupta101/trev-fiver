@@ -3,6 +3,12 @@ import '../styles/globals.css'
 
 
 function MyApp({ Component, pageProps }) {
+  if (process.env.NODE_ENV === 'production') {
+    console.log = () => {}
+    console.error = () => {}
+    console.debug = () => {}
+  }
+  
   return <Component {...pageProps} />
 }
 
