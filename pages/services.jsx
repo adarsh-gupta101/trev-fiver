@@ -25,12 +25,81 @@ const data = [
     desc: "Optimize business to develop on-demand e-commerce applications that add mobility to your business with streamlined retail processes and operations. We endeavor in offering flexible and resilient ecommerce application development services tailored to unique business requirements with a personalized user experience.",
     img: "/assets/s4.svg",
   },
+  {
+    name: "CLOUD COMPUTING",
+    desc: " If you're confused by all this talk about Cloud computing let us cut through all the complexities for you. We can help you to understand and harness all the power and flexibility of Cloud and reap the many business benefits this innovation delivers.",
+    img: "/assets/s5.svg",
+    extra: [
+      {
+        name: "Cloud Solutions",
+        desc: "You can count on our expert guidance in helping you determine your specific cloud requirements. Easy to work with and easily understood, our engineers speak your language: we take the time to explain every step so that you are always part of the process.",
+        data: [
+          {
+            name: "Cost-effective & Secure",
+            desc: "Migrating to the cloud has many cost and security advantages. Eliminate server and maintenance expense while ensuring your vital data is protected with the most up-to-date cyber security protocols available.",
+          },
+          {
+            name: "End-to-End Support",
+            desc: "Mustard IT provides set-up, maintenance and wrap-around support for all of your cloud needs. We can be as hands-on or as hands-off as needed – it’s all about the way you do business.",
+          },
+        ],
+      },
+      {
+        name: "Cloud Emails",
+        data: [
+          {
+            name: "Universal Access",
+            desc: "Access your email from any location and any device with an internet connection. Empower your remote workers to accomplish more while staying on top of every communication.",
+          },
+          {
+            name: "Guaranteed Business Continuity",
+            desc: "Your information is stored in the cloud, so lost data from crashes, server or hardware failure are a thing of the past. Secure backups allow full restoration in case of any type of disaster, ensuring your uptime no matter what.",
+          },
+          {
+            name: "Cost-effective & Scalable",
+            desc: "Establish as many unique email accounts as you need at no extra cost. Subscription-based pricing structure provides a predictable monthly spend and can be scaled instantly when the need arises.",
+          },
+        ],
+      },
+      {
+        name: "Cloud Storage",
+        data: [
+          {
+            name: "Flexible & Secure            ",
+            desc: "Cloud storage provides a flexible solution to accessing your files that will grow with your business. Secure backups facilitate business continuity and assure that your data is always available whenever and wherever you need it.",
+          },
+          {
+            name: "Stay In Sync",
+            desc: "No more time spent searching for the files you need. A central store of your documents in one single location helps manage master copies and allows you and your colleagues to access important information immediately via any device, from any location.",
+          },
+          {
+            name: "Share & Collaborate",
+            desc: "Manage and share documents with co-workers or clients no matter where in the world they are. Configure team sites to facilitate collaboration on projects, assigning tasks and managing access across the team",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "IT INFRASTRUCTURE",
+    desc: "TrendOnline Digital can help your business with all aspects of its IT infrastructure, from design and configuration to expanding",
+    img: "/assets/s6.svg",
+  },
+  {
+    name: "IT SUPPORT",
+    desc: "Trendonline Digital provides IT support services throughout Zimbambwe and the SADC region, helping small to medium sized businesses get the most out of their IT systems.",
+    img: "/assets/s7.svg",
+  },
 ];
 
 function Services() {
   return (
-    <div className='bg-gray-50' style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
-  }}>
+    <div
+      className='bg-gray-50'
+      style={{
+        background:
+          'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")',
+      }}>
       <Headr />
       <FloatingWhatsApp
         style={{ ZIndex: 10 }}
@@ -53,8 +122,28 @@ function Services() {
             <div>
               <p className='text-4xl  font-semibold pb-2'> {datas.name}</p>
               <p className='text-gray-500 '>{datas.desc}</p>
+              {datas.extra &&
+                datas.extra?.map((result) => {
+                  console.log(result)
+                  return (
+                    <div className="my-4">
+                      <p className="font-bold text-2xl">{result.name}</p>
+                      <p>{result.desc}</p>
+                      {result.data && result.data.map(res=>{
+                        return(
+                          <div className="p-4">
+                            <p className="font-semibold text-xl">{res.name}</p>
+                      <p>{res.desc}</p>
+                          </div>
+                        )
+                      })}
+                    
+                    </div>
+                  );
+                })}
+
               <Link href='/contact'>
-                <p className='text-white bg-yellow-500 font-bold w-fit p-2 my-4 shadow'>
+                <p className='text-white cursor-pointer bg-yellow-500 font-bold w-fit p-2 my-4 shadow'>
                   Contact Us
                 </p>
               </Link>
