@@ -84,6 +84,43 @@ const data = [
     name: "IT INFRASTRUCTURE",
     desc: "TrendOnline Digital can help your business with all aspects of its IT infrastructure, from design and configuration to expanding",
     img: "/assets/s6.svg",
+    extra: [
+      {
+        name: "ROUTERS,SWITCHING AND WIFI",
+        desc: "When IT people talk about the infrastructure on which your network operates they often use the analogy of the foundations on which your house was built. It is true that the quality and specification of network switches, routers, structured cabling, hardware and internet connectivity all play a vital role in ensuring your IT systems deliver optimum performance for your business",
+        data: [
+          {
+            name: "Access Control",
+            desc: "Routers act as your gateway to the internet but you must be careful not to leave that gate open. What’s more, remote connectivity solutions may enable workers to remain productive when they are away from the office but you need to ensure that only trusted users are allowed access to your systems. Speak to Mustard about your router and switchgear requirements today.",
+          },
+          {
+            name: "Choosing the Right Network Switch",
+            desc: "If network cabling is the system of veins and arteries that carries data around the body of your network, your network switch is the brains of the operation. The model you choose will have a direct bearing on your business productivity, so talk to Trendonline Digital about your options.",
+          },
+        ],
+      },
+      {
+        name: "SERVERS AND STORAGE DEVICES      ",
+        data: [
+          {
+            name: "Factors that Shape Your Solution",
+            desc: "The needs of every Trendonline client are different. Trendonline Digital does not operate a 'one size fits all' policy but instead studies a number of factors before recommending a final solution. These may include capacity, performance, scalability, availability, data protection and budget.",
+          },
+          {
+            name:"Backup and Disaster Recovery",            
+            desc:"Servers and storage devices are the most critical components on your business network, since they store the data that enables your organisation to function. As such, Trendonline engineers will perform a thorough review of your backup and disaster recovery plans any time we are asked to specify this kind of hardware."
+          }
+        ],
+      },
+      {
+        name:"CABLING,CONNECTIVITY AND INTERNET ",
+        data:[{
+          name:"Accredited Installations",
+          desc:"Network cabling solutions need to be installed to precise specifications in order to operate effectively. Our installers hold relevant accreditations and work to exacting standards to ensure your cabling is fit for the task ahead"
+          
+        },{name:"Internet Connectivity",desc:"TrendOnline Digital works with some of the leading telecoms companies and internet services providers to offer clients a wide choice of solutions from broadband to dedicated lease lines. Our experience in working with telecoms service providers will spare you unnecessary complications when moving office or provisioning new services."}]
+      }
+    ],
   },
   {
     name: "IT SUPPORT",
@@ -120,24 +157,29 @@ function Services() {
             className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-4'
             key={index}>
             <div>
-              <p className='text-4xl  font-semibold pb-2 break-words'> {datas.name}</p>
+              <p className='text-4xl  font-semibold pb-2 break-words'>
+                {" "}
+                {datas.name}
+              </p>
               <p className='text-gray-500 py-2 '>{datas.desc}</p>
               {datas.extra &&
-                datas.extra?.map((result,index) => {
+                datas.extra?.map((result, index) => {
                   // console.log(result)
                   return (
-                    <div className="my-4" key={index}>
-                      <p className="font-bold text-2xl">{result.name}</p>
-                      <p>{result.desc}</p>
-                      {result.data && result.data.map((res,ind)=>{
-                        return(
-                          <div className="p-4" key={ind}>
-                            <p className="font-semibold text-xl">{res.name}</p>
-                      <p className="my-2 text-gray-700">{res.desc}</p>
-                          </div>
-                        )
-                      })}
-                    
+                    <div className='my-4' key={index}>
+                      <p className='font-bold text-2xl'>{result.name}</p>
+                      <p className="pt-2">{result.desc}</p>
+                      {result.data &&
+                        result.data.map((res, ind) => {
+                          return (
+                            <div className='p-4' key={ind}>
+                              <p className='font-semibold text-xl'>
+                                {res.name}
+                              </p>
+                              <p className='my-2 text-gray-700'>{res.desc}</p>
+                            </div>
+                          );
+                        })}
                     </div>
                   );
                 })}
