@@ -123,15 +123,15 @@ function Services() {
               <p className='text-4xl  font-semibold pb-2'> {datas.name}</p>
               <p className='text-gray-500 '>{datas.desc}</p>
               {datas.extra &&
-                datas.extra?.map((result) => {
-                  console.log(result)
+                datas.extra?.map((result,index) => {
+                  // console.log(result)
                   return (
-                    <div className="my-4">
+                    <div className="my-4" key={index}>
                       <p className="font-bold text-2xl">{result.name}</p>
                       <p>{result.desc}</p>
-                      {result.data && result.data.map(res=>{
+                      {result.data && result.data.map((res,ind)=>{
                         return(
-                          <div className="p-4">
+                          <div className="p-4" key={ind}>
                             <p className="font-semibold text-xl">{res.name}</p>
                       <p>{res.desc}</p>
                           </div>
