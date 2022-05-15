@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import prie from "../../public/assets/preview.png";
-console.log(prie);
+// console.log(prie);
 function Solutions2() {
   const ref = useRef(null);
 
