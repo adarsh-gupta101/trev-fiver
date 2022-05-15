@@ -11,11 +11,11 @@ function Solutions() {
       element.querySelector(".itsol"),
       {
         x: 25,
-        y:0
+        y: 0,
       },
       {
         x: -25,
-        y:10,
+        y: 10,
         scrollTrigger: {
           trigger: element,
           start: "top center",
@@ -43,7 +43,7 @@ function Solutions() {
           style={{ height: "99vh" }}
           className='-z-1 relative md:w-2/5 shadow-2xl brightness-50 md:brightness-100	'
         />
-        <p className=' md:hidden bg-[#57400] mt-32   w-full text-center flex items-center justify-center   flex-wrap text-6xl xl:text-9xl font-bold text-[#e4e71c] h-64 absolute z-40 '>
+        <p className='drop-shadow-2xl tracking-wide		 md:hidden bg-[#57400] mt-40   w-full text-center flex  items-center justify-center    text-6xl xl:text-9xl font-bold text-[#e4e71c] h-64 absolute z-40 '>
           OUR IT SOLUTIONS
         </p>
       </>
