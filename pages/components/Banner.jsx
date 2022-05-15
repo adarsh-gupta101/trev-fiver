@@ -53,7 +53,8 @@ function Banner() {
       className=' w-full flex flex-col-reverse md:flex-row md:justify-center  md:items-center bg bg-[#f2f3f0]'
       style={{
         fontFamily: "poppins",
-        background: "linear-gradient(309deg, #ff1b6b, #fff95b)",
+        background:"linear-gradient(220deg, rgb(255, 27, 107), rgb(91 182 255))"
+        // background: "linear-gradient(309deg, #ff1b6b, #fff95b)",
       }}>
       <div className='flex-col  top-0    w-full'>
         <img
@@ -68,7 +69,7 @@ function Banner() {
       </div>
       <div className='flex'>
         <h1
-          className='text-5xl p-2 md:p-0  md:text-8xl md:w-2/3 font-bold txt-[#e3e634]  text-black'
+          className='text-5xl p-2 md:p-0  md:text-8xl md:w-2/3 font-bold txt-[#e3e634]  text-white'
           ref={boxRef}>
           WE&apos;RE SOFTWARE DEVELOPERS AND IT EXPERTS
         </h1>

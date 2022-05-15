@@ -20,7 +20,7 @@ function Induvidualsolution({item}) {
 {" "}
 {item?.description}
 </p>
-<button className={isOpen?'bg-blue-500 text-white p-2 mt-12':"hidden"}>
+<button className={isOpen?'bg-yellow-500 text-white p-2 mt-12':"hidden"}>
 {" "}
 <Link href="/services">
 View Services
