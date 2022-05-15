@@ -117,7 +117,7 @@ function Services() {
       {data.map((datas, index) => {
         return (
           <div
-            className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-7'
+            className='flex  flex-col-reverse md:flex-row items-center shadow rounded p-8 bg-white m-4'
             key={index}>
             <div>
               <p className='text-4xl  font-semibold pb-2 break-words'> {datas.name}</p>
