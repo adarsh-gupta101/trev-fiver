@@ -49,7 +49,7 @@ function Aboutmain() {
             neo-bank
           </p>
           <Link href="/portfolio">
-           <p  className='bg-yellow-700 text-center w-fit p-4 rounded shadow-2xl text-white'> Learn More</p>
+           <p  className='bg-yellow-500 cursor-pointer text-center w-fit p-3 rounded shadow-2xl text-white'> Learn More</p>
           </Link>
         </div>
       </div>

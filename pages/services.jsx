@@ -28,7 +28,8 @@ const data = [
 
 function Services() {
   return (
-    <div className='bg-gray-50'>
+    <div className='bg-gray-50' style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
+  }}>
       <Headr />
       <p className='text-5xl font-bold text-center p-6'>OUR SERVICES</p>
       <p className='text-2xl pt-8 text-center font-medium'>WHAT WE DO?</p>
