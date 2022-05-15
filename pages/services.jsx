@@ -107,25 +107,101 @@ const data = [
             desc: "The needs of every Trendonline client are different. Trendonline Digital does not operate a 'one size fits all' policy but instead studies a number of factors before recommending a final solution. These may include capacity, performance, scalability, availability, data protection and budget.",
           },
           {
-            name:"Backup and Disaster Recovery",            
-            desc:"Servers and storage devices are the most critical components on your business network, since they store the data that enables your organisation to function. As such, Trendonline engineers will perform a thorough review of your backup and disaster recovery plans any time we are asked to specify this kind of hardware."
-          }
+            name: "Backup and Disaster Recovery",
+            desc: "Servers and storage devices are the most critical components on your business network, since they store the data that enables your organisation to function. As such, Trendonline engineers will perform a thorough review of your backup and disaster recovery plans any time we are asked to specify this kind of hardware.",
+          },
         ],
       },
       {
-        name:"CABLING,CONNECTIVITY AND INTERNET ",
-        data:[{
-          name:"Accredited Installations",
-          desc:"Network cabling solutions need to be installed to precise specifications in order to operate effectively. Our installers hold relevant accreditations and work to exacting standards to ensure your cabling is fit for the task ahead"
-          
-        },{name:"Internet Connectivity",desc:"TrendOnline Digital works with some of the leading telecoms companies and internet services providers to offer clients a wide choice of solutions from broadband to dedicated lease lines. Our experience in working with telecoms service providers will spare you unnecessary complications when moving office or provisioning new services."}]
-      }
+        name: "CABLING,CONNECTIVITY AND INTERNET ",
+        data: [
+          {
+            name: "Accredited Installations",
+            desc: "Network cabling solutions need to be installed to precise specifications in order to operate effectively. Our installers hold relevant accreditations and work to exacting standards to ensure your cabling is fit for the task ahead",
+          },
+          {
+            name: "Internet Connectivity",
+            desc: "TrendOnline Digital works with some of the leading telecoms companies and internet services providers to offer clients a wide choice of solutions from broadband to dedicated lease lines. Our experience in working with telecoms service providers will spare you unnecessary complications when moving office or provisioning new services.",
+          },
+        ],
+      },
     ],
   },
   {
     name: "IT SUPPORT",
     desc: "Trendonline Digital provides IT support services throughout Zimbambwe and the SADC region, helping small to medium sized businesses get the most out of their IT systems.",
     img: "/assets/s7.svg",
+    extra: [
+      {
+        name: "",
+        desc: "All of our IT support packages include unlimited remote support with a 20 minute target response time and a next day onsite response if a fault cannot be repaired remotely. Advanced support options include unlimited onsite calls and scheduled weekly visits by accredited engineers who are able to consult and advise your business at a Director level.",
+      },
+
+      {
+        name: "Hardware",
+        data: [
+          {
+            name: "Proactive Performance Monitoring",
+            desc: "A network is the backbone of any modern business and IT systems are often put under great strain by users accessing files on desktop PCs, laptops and tablets. Trendonline can monitor technical resources and provide vital support when things go wrong, ensuring productivity never suffers.",
+          },
+          {
+            name: "Project Management",
+            desc: "In addition to PC installations and server commissioning, Trendonline has extensive experience managing office moves, installing structured cabling systems and designing disaster recovery solutions for its clients. Talk to one of our experts about your IT project today.",
+          },
+          {
+            name: "IT Roadmaps and Budget-Planning",
+            desc: "Our clients rely on us to help plan their IT spending by documenting IT hardware, advising on IT strategy and assisting with warranty and software license management.",
+          },
+        ],
+      },
+      {
+        name: "Software",
+        data: [
+          {
+            name: "Cloud Computing",
+            desc: "With the proliferation of hosted applications and Software as a Service (SaaS), cloud computing is becoming a reality for more and more Zimbambwean businesses. Trendonline Digital offers a comprehensive range of cloud products including cloud email, Office365 and online storage.",
+          },
+          {
+            name: "We'll Talk to Your Vendors            ",
+            desc: "Upgraded operating systems and Windows security patches can cause a variety of problems for application software. Trendonline always tries to avoid such issues by speaking directly with software vendors prior to any planned system upgrade or migration. But if problems do arise, we’ll liaise with their support teams on your behalf, leaving you to concentrate on your work.      ",
+          },
+          {
+            name: "License Management",
+            desc: "Dedicated account managers work with all Trendonline Digital support customers to consult and advise on every aspect of their network including license management and compliance.",
+          },
+        ],
+      },
+      {
+        name: "Network Design",
+        data: [
+          {
+            name: "Expert Guidance",
+            desc: "If you already have a network, Trendonline Digital will investigate performance issues and recommend solutions to overcome them. If you do not, our engineers will work with you to design, install and configure a network solution tailored to the specific needs of your business.",
+          },
+          {
+            name: "Support & Monitoring",
+            desc: "We understand the importance of a healthy network to the smooth functioning of your business. In addition to providing ongoing maintenance, our friendly engineers will therefore constantly review the performance of all network hardware and provide you with critical feedback along the way.    ",
+          },
+        ],
+      },
+      {
+        name: "Office  Moves and IT relocations",
+        data: [
+          {
+            name: "Project Management ",
+            desc: "or to lead from the front. We have successfully project managed a variety of IT projects over the years including many office relocations and would be happy to take responsibility for your office move.      ",
+          },
+          {
+            desc: "Getting You up and Running for Monday schedules most office moves to take place over a weekend. Our engineers are happy to work outside of normal office hours to ensure disruption is kept to a minimum and we’ll be there early on Monday morning to check everything is working as it should be.          ",
+            name: "",
+          },
+          {
+            name: "Liaising With Third Parties          ",
+            desc: "We are in the communications business and we like to practice as we preach. Trendonline Digital will liaise regularly with your office removal company, onsite contractors and third party suppliers such Internet Service Providers to make sure everything runs like clockwork",
+          },
+        ],
+      },
+    ],
   },
 ];
 
@@ -168,7 +244,7 @@ function Services() {
                   return (
                     <div className='my-4' key={index}>
                       <p className='font-bold text-2xl'>{result.name}</p>
-                      <p className="pt-2">{result.desc}</p>
+                      <p className='pt-2'>{result.desc}</p>
                       {result.data &&
                         result.data.map((res, ind) => {
                           return (
