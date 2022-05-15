@@ -110,7 +110,7 @@ function Industries() {
 
       <h1
         id='advicehead'
-        className=' p-2 md:p-0 text-5xl flex items-center text-center m-auto md:text-8xl md:w-11/12 font-bold text-yellow-600'
+        className=' p-2 md:p-0 text-5xl flex items-center text-center m-auto md:text-8xl md:w-11/12 font-bold text-yellow-500'
         style={{
           height: "80vh",
           backgroundImage:
@@ -126,11 +126,11 @@ function Industries() {
             id='sliderdiv'
             className='m-2 shadow hover:shadow-xl md:m-2 p-8  md:p-16 '>
             <img alt='' src={item.image} className='w-full h-full'></img>
-            <p className='bg-white shadow-xl w-fit p-2 text-xl rounded relative -top-4 left-1/2 hover:bg-[#b9ab25] hover:text-white'>
+            <p className='bg-white shadow-xl w-fit p-2 text-xl rounded relative -top-4 left-1/2 hover:bg-yellow-500 hover:text-white'>
               View Industry
             </p>
             <p className='text-xl font-semibold'>{item.name}</p>
-            <p className='font-medium text-[#aa9e30]'>{item.description}</p>
+            <p className='font-medium text-yellow-500'>{item.description}</p>
           </div>
         ))}
       </Slider>
