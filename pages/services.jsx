@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./components/footer";
 import Headr from "./components/header";
 import Link from "next/link";
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 const data = [
   {
@@ -31,6 +32,12 @@ function Services() {
     <div className='bg-gray-50' style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
   }}>
       <Headr />
+      <FloatingWhatsApp
+        style={{ ZIndex: 10 }}
+        phoneNumber={+263732774218}
+        accountName='TrendOnlineDigital'
+        avatar='/assets/img/logo trend.png'
+      />
       <p className='text-5xl font-bold text-center p-6'>OUR SERVICES</p>
       <p className='text-2xl pt-8 text-center font-medium'>WHAT WE DO?</p>
       <p className='text-xl px-8 py-8 text-center'>

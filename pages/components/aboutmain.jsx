@@ -13,6 +13,7 @@ import { GrLaunch } from "react-icons/gr";
 import Usersowner from "./utils/usersowner";
 import Footer from "./footer";
 import Link from "next/link";
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 
 
@@ -24,6 +25,12 @@ function Aboutmain() {
     <div style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
   }}>
       <Header />
+      <FloatingWhatsApp
+        style={{ ZIndex: 10 }}
+        phoneNumber={+263732774218}
+        accountName='TrendOnlineDigital'
+        avatar='/assets/img/logo trend.png'
+      />
       <div className='flex-col md:flex-row-reverse p-2 bg-ray-50'>
         <img 
           src='/assets/poster.jpg'

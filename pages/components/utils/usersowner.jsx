@@ -37,7 +37,7 @@ function Usersowner() {
   return (
       <div className="flex flex-wrap justify-center items-center pb-16">
       {users.map((user,i)=>(
-        <div key={i} className='bg-white w-fit   p-4 m-4 shadow-2xl hover:shadow'>
+        <div key={i} className='bg-hite w-fit   p-4 m-4 shadow-2xl hover:shadow rounded'>
         <img src={user.image}className='rounded-full w-64 h-64' alt='' />
         <p className='text-center  text-2xl m-2'>{user.name} </p>
         <p className='text-center'>{user.position}</p>

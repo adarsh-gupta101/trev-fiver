@@ -7,12 +7,19 @@ import { AiOutlineMobile } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 function Contact() {
   return (
     <div style={{        background:'url("https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=2000")'
   }}>
       <Header />
+      <FloatingWhatsApp
+        style={{ ZIndex: 10 }}
+        phoneNumber={+263732774218}
+        accountName='TrendOnlineDigital'
+        avatar='/assets/img/logo trend.png'
+      />
       <p className='text-5xl text-bold text-center mt-16'> CONTACT US</p>
       <div className='flex flex-wrap justify-center items-center'>
         <div className='bg-whte shadow-xl flex flex-col items-center w-64 text-xl text-center p-4  m-12'>

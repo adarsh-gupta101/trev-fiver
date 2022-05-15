@@ -1,4 +1,5 @@
 import React from "react";
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -13,6 +14,12 @@ function ITS() {
       <Solutions2></Solutions2>
       {/* <Solutionscontainer/> */}
       <Solutionsdrop/>
+      <FloatingWhatsApp
+        style={{ ZIndex: 10 }}
+        phoneNumber={+263732774218}
+        accountName='TrendOnlineDigital'
+        avatar='/assets/img/logo trend.png'
+      />
 
       {/* <Certifications/> */}
       {/* <About/> */}
